@@ -8,7 +8,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
-    "build:client": "webpack && cp ./src/client/index.html ./public",
+    "build:client": "webpack && copy .\\src\\client\\index.html .\\public",
     "format": "prettier --write \\\"src/**/*.ts\\\" \\\"src/server/test/**/*.ts\\\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
