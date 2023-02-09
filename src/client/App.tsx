@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 import { useEffect, useState } from 'react';
-import { HelloResponse } from '../common/HelloResponse';
+import { ArticleListResponse } from '../common/ArticleListResponse';
 
 const App = () => {
     const [text, setText] = useState('');
 
     useEffect(() => {
         fetch('/api/hello')
-            .then<HelloResponse>(res => res.json())
+            .then<ArticleListResponse>(res => res.json())
             .then(res => setText(res.text));
     }, []);
 
