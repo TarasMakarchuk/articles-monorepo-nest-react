@@ -1,3 +1,1 @@
-export type ArticleListResponse = {
-    text: string;
-};
+export { ArticleListResponse } from '../server/article/article.types';
