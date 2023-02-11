@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { Article } from './Article';
 import { ArticleList } from './ArticleList';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
 
             <Routes>
                 <Route path='/article' element={ <ArticleList /> } />
+                <Route path='/article/:name' element={ <Article /> } />
             </Routes>
         </BrowserRouter>
     );
