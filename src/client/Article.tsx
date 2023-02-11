@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router';
 
 export const Article = () => {
@@ -11,6 +12,6 @@ export const Article = () => {
     }, []);
 
     return (
-       <div> { article } </div>
+        <ReactMarkdown children={ article } />
     );
 }
