@@ -3,7 +3,7 @@ import { Controller, Get, Render } from '@nestjs/common';
 @Controller('/')
 export class AppController {
 
-    @Get([''])
+    @Get(['', 'article'])
     @Render('layout')
     pages() {
 
